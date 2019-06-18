@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue.js</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>  <!--导入vue模块,需网络-->
+
+
+</head>
+<body>
+<div id="vue-app">
+    <h1>Data：{{ name }}</h1>
+    <h1>Job：{{ job }}</h1>
+    <h1>Time：{{ time }}</h1>
+    <h1>methods：{{ greet('下士') }}</h1>
+    <h1><a v-bind:href="website" style="text-decoration: none; color: red;">web开发</a></h1>
+    <input type="text" v-bind:value="name">  <!-- 切记，v-bind 绑定事件 值里面不得加{{}} 否则将不得显示内容 -->
+    <h1 v-html="websiteTag"></h1>
+</div>
+
+</body>
+<script src="js/app.js"></script>
+
+</html>

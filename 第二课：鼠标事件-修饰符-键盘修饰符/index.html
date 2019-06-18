@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>  <!--导入vue模块,需网络-->
+</head>
+<body>
+
+
+<div id="vue-app">
+    <h1> 小小怪下士 </h1>
+
+<!--    鼠标单击和双击事件-->
+    <button @click="add(1)">加一岁</button>
+    <button v-on:dblclick="add(10)">加十岁</button>
+    <p style="display: inline-block">my age is {{ age }}</p>
+    <button @dblclick="sub(10)">减十岁</button>
+    <button v-on:click="sub(1)">减一岁</button>
+
+<!--    鼠标滑动事件-->
+    <div id="canvas" v-on:mousemove="updateXY">
+        {{ X }} {{ Y }}
+    </div>
+</div>
+
+
+</body>
+<script src="js/app.js"></script>
+</html>
