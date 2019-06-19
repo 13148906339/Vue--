@@ -1,0 +1,4 @@
+总结：
+网址：https://cn.vuejs.org/v2/guide/events.html#%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6
+    事件处理：
+    监听事件 ：{{  }}符号里面的变量是从JS里data中的自定义键值对传过来的

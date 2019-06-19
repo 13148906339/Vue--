@@ -1,0 +1,25 @@
+总结：
+链接网址：https://cn.vuejs.org/v2/guide/events.html#%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6
+    事件修饰符(修饰符可链接使用,有先后顺序,也可以只有修饰符)：
+        .stop 阻止单击事件继续传播
+        .prevent 提交事件不再重载页面
+        .capture 捕获模式
+        .self  点击自身才能触发事件(绑定或被绑定时都会被携带触发)
+        .once   点击事件将只会触发一次
+        .passive
+
+    按键修饰符：
+        .keyup  控制台记录按键多少
+        .keydown
+    ↑↓(两者可搭配使用,有顺序使用)
+    按键码(键盘键位)：
+    .enter
+    .tab
+    .delete (捕获“删除”和“退格”键)
+    .esc
+    .space
+    .up
+    .down
+    .left
+    .right
+
